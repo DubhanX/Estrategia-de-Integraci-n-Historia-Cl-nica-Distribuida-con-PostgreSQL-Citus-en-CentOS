@@ -1,6 +1,6 @@
 # Estrategia de Integración: Historia Clínica Distribuida con PostgreSQL + Citus en CentOS
 
-## 📋 Resumen del Proyecto
+## Resumen del Proyecto
 Sistema de historia clínica distribuida usando PostgreSQL con extensión Citus para fragmentación automática de datos.
 
 **Arquitectura:**
@@ -11,7 +11,7 @@ Sistema de historia clínica distribuida usando PostgreSQL con extensión Citus 
 
 ---
 
-## 🔧 Fase 1: Preparación del Entorno CentOS
+## Fase 1: Preparación del Entorno CentOS
 
 ### Paso 1: Instalar Docker y Docker Compose
 
@@ -68,7 +68,7 @@ psql --version
 
 ---
 
-## 📦 Fase 2: Despliegue del Proyecto
+## Fase 2: Despliegue del Proyecto
 
 ### Paso 1: Clonar el Repositorio
 
@@ -134,7 +134,7 @@ docker logs citus_coordinator
 
 ---
 
-## 🗄️ Fase 3: Configuración de la Base de Datos
+## Fase 3: Configuración de la Base de Datos
 
 ### Paso 1: Crear la Extensión Citus
 
@@ -164,7 +164,7 @@ docker exec -i citus_coordinator psql -U admin -d historia_clinica < insert_dato
 
 ---
 
-## ✅ Fase 4: Validación y Pruebas
+## Fase 4: Validación y Pruebas
 
 ### Verificar la Distribución de Datos
 
@@ -208,7 +208,7 @@ docker logs citus_worker_2
 
 ---
 
-## 🛠️ Comandos Útiles
+## Comandos Útiles
 
 ### Gestión de Contenedores
 
@@ -248,7 +248,7 @@ docker exec -i citus_coordinator psql -U admin -d historia_clinica < backup.sql
 
 ---
 
-## 🚨 Solución de Problemas Comunes
+## Solución de Problemas Comunes
 
 ### Problema: Docker no inicia
 ```bash
@@ -290,7 +290,7 @@ sudo docker-compose -f docker-compose-citus.yml up -d
 
 ---
 
-## 📊 Próximos Pasos
+## Próximos Pasos
 
 1. **Crear una aplicación cliente** que se conecte a la base de datos
 2. **Implementar endpoints REST** para CRUD de historias clínicas
@@ -300,7 +300,7 @@ sudo docker-compose -f docker-compose-citus.yml up -d
 
 ---
 
-## 📚 Recursos Adicionales
+## Recursos Adicionales
 
 - [Documentación oficial de Citus](https://docs.citusdata.com/)
 - [PostgreSQL en CentOS](https://www.postgresql.org/download/linux/redhat/)
