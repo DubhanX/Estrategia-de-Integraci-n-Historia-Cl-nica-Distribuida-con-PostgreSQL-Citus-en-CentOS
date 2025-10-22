@@ -1,0 +1,1 @@
+# Estrategia-de-Integraci-n-Historia-Cl-nica-Distribuida-con-PostgreSQL-Citus-en-CentOS
